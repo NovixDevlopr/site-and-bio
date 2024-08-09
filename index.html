@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loxx</title>
+    <link rel="stylesheet" href="css/index.css">
+    <dd>Loxx</dd>
+    <link rel="shortcut icon" type="imagex/png" href="https://avatars.githubusercontent.com/u/173546080?s=400&u=ef8805edc375662ea427fe10aced0fe4bf0ad6c9&v=4">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<script>
+    function devToolsDetect() {
+        const devtools = new Image();
+        devtools.__defineGetter__('id', function() {
+            devtoolsOpened();
+        });
+        console.log('%c', devtools);
+    }
+
+    function devtoolsOpened() {
+        alert("DevTools está aberto!");
+        window.location = 'about:blank';
+    }
+
+    setInterval(devToolsDetect, 1000);
+</script>
+</head>
+<body>
+
+    <div class="video-container">
+        <video autoplay muted loop>
+            <source src="assets/index/background.mp4" type="video/mp4" />
+        </video>
+        <audio id="bgMusic" autoplay loop>
+            <source src="assets/index/music.mp3" type="audio/mpeg"/>
+        </audio>
+        <div class="caption">
+            <div class="card-container">
+                <div class="card">
+                    <div class="logo">
+                        <img src="assets/index/profile4.png" alt="Profile Picture"> 
+                    </div>
+                    <div class="nick">
+                        Loxx
+                    </div>
+                    <div class="description-container">
+                        <p class="description">"Nos sorrisos que dou, há uma tristeza que nunca se vai."</p>
+                    </div>
+                    <div class="icon-links">
+                        <a href="" class="icon-link" target="_blank"><i class="fab fa-telegram"></i></a>
+                        <a href="" class="icon-link" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a href="" class="icon-link" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.instagram.com/loxxsla" class="icon-link" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://discord.gg/EweRSq8x5J" class="icon-link" target="_blank"><i class="fab fa-discord"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+    <script>
+        const bgMusic = document.getElementById('bgMusic');
+        const volumeSlider = document.getElementById('volumeSlider');
+
+        function changeVolume() {
+            bgMusic.volume = volumeSlider.value;
+        }
+    </script>
+
+</body>
+</html>
+
+<!-- By: InimizadeNX -->
